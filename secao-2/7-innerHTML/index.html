@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const nome = prompt("digite seu nome:");
+        let idade = prompt("digite sua idade:");
+        if (idade < 18) {
+            document.body.innerHTML += `Seu nome é: ${nome}<br />`
+            document.body.innerHTML += `Você é menor de idade. Apenas pessoas acima de 18 anos podem utilizar nosso sistema.`
+        }
+        document.body.innerHTML
+    </script>
+</body>
+</html>
