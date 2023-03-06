@@ -37,7 +37,7 @@ function meuEscopo(){
 
         resultado.innerHTML += `<p>${pessoa.nome} ${pessoa.sobrenome} ${pessoa.peso} ${pessoa.altura}</p>`
     }
-
+    
     form.addEventListener('submit', recebeEventoForm);
 }
 meuEscopo();
