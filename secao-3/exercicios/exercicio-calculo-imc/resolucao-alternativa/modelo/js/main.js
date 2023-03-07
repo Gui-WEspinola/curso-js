@@ -33,7 +33,9 @@ function calculoIMC() {
 
     function criaP(msg, isValid) {
         const p = document.createElement('p');
-        isValid ? p.classList.add('valid-input-p') : p.classList.add('invalid-input-p')
+
+        isValid ? p.classList.add('valid-input-p') : p.classList.add('invalid-input-p');
+
         p.innerHTML = msg
         return p;
     }
