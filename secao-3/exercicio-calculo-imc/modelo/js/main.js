@@ -7,8 +7,8 @@ function calculoIMC () {
 
         evento.preventDefault();
 
-        let peso = form.querySelector(".peso");
-        let altura = form.querySelector(".altura");
+        let peso = form.querySelector('#peso');
+        let altura = form.querySelector('#altura');
 
         const pesoNumber = Number(peso.value);
         const alturaNumber = Number(altura.value);
@@ -28,7 +28,7 @@ function calculoIMC () {
         } else if (imc >= 40) {
             resultado.innerHTML = '<p class="imc-sucesso">Obesidade grau 3</p>'
         } else if (isNaN(imc)) {
-            resultado.innerHTML = '<p class ="imc-invalido">Digite peso e altura válidos</p>'
+            resultado.innerHTML = '<p class="imc-invalido">Digite peso e altura válidos</p>'
         }
     }
 

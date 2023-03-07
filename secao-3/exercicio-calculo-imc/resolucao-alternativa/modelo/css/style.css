@@ -58,12 +58,12 @@ form button:hover {
     background: var(--primary-color-darker);
 }
 
-.imc-sucesso {
+.valid-input-p {
     padding: 10px;
     background-color: mediumspringgreen;
 }
 
-.imc-invalido {
+.invalid-input-p {
     padding: 10px;
     background-color: lightsalmon;
 }
