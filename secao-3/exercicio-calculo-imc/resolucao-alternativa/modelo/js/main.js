@@ -39,7 +39,7 @@ function calculoIMC() {
     }
 
     function calcularImc(peso, altura) {
-        return peso * altura ** 2;
+        return peso / altura ** 2;
     }
 
     function generateText(imc) {
