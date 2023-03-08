@@ -10,8 +10,11 @@ function adicionaTexto() {
     ];
 
     for (const element of elementos) {
+        let { tag, texto } = element;
         let createdElement = document.createElement(`${element.tag}`);
-        createdElement.innerHTML = element.texto
+        let createdText = document.createTextNode(texto);
+
+        createdElement.appendChild(createdText);
         div.appendChild(createdElement);
     }
 
