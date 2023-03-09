@@ -19,8 +19,8 @@ const timer = setInterval(function () { // Tb é possível passar uma função a
 setTimeout(function () { // utilizada para parar uma função de intervalo
     clearInterval(timer);
 }, 4000);
-
-setTimeout(function () {
-    console.log('Olá Mundo!')
-}, 5000);
+//
+// setTimeout(function () {
+//     console.log('Olá Mundo!')
+// }, 5000);
 

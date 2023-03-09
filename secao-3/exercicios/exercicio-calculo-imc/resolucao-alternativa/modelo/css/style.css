@@ -67,3 +67,7 @@ form button:hover {
     padding: 10px;
     background-color: lightsalmon;
 }
+
+.pausado {
+    color: red;
+}
