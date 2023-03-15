@@ -26,6 +26,10 @@ body {
   border-radius: 10px;
 }
 
+.li-tarefa {
+  font-size: 14px;
+}
+
 form input, form label, form button {
   display: block;
   width: 100%;

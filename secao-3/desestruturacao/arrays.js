@@ -1,11 +1,15 @@
-let a = 'A'
-let b = 'B'
-let c = 'C'
+function arrays() {
+    let a = 'A'
+    let b = 'B'
+    let c = 'C'
 
-console.log(a, b, c);
+    console.log(a, b, c);
 
-const numeros = [1, 2, 3];
-console.log(numeros);
-[a, b , c] = numeros;
+    const numeros = [1, 2, 3];
+    console.log(numeros);
+    [a, b , c] = numeros;
 
-console.log(a, b, c);
+    console.log(a, b, c);
+}
+
+arrays()

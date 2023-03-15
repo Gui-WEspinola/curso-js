@@ -18,8 +18,8 @@ function relogio() {
         }, 1000)
     }
 
-    document.addEventListener('click', function (evt) { // adicionar vários event listeners não é performático.
-        const el = evt.target; // aqui estamos adicionando um alvo para os eventos de clique.
+    document.addEventListener('click', (evt) => { // adicionar vários event listeners não é performático.
+        const el = evt.target; // adicionando um alvo para os eventos de clique.
 
         if (el.classList.contains('iniciar')) {
             clearInterval(timer);

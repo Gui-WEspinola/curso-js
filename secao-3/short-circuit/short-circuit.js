@@ -15,21 +15,26 @@ exemplos:
     NaN
 */
 
-console.log('luiz' && "maria"); // o JS retorna o último valor, caso todos os valores sejam verdadeiros.
+function shortCircuit() {
+
+    console.log('luiz' && "maria"); // o JS retorna o último valor, caso todos os valores sejam verdadeiros.
 // retorna "maria" em tela.
 
-console.log('luiz' && undefined && 'maria'); // retorna undefined em tela, e não mais 'maria'
+    console.log('luiz' && undefined && 'maria'); // retorna undefined em tela, e não mais 'maria'
 
-function falaOi() {
-    return 'Oi';
+    function falaOi() {
+        return 'Oi';
+    }
+
+    const vaiExecutar = false;
+
+    console.log(vaiExecutar && falaOi());
+
+    const corUsuario = null;
+    const corPadrao = corUsuario || "preto"; // retorna preto caso corUsuario seja null (ou falsy). Caso contrario, retorna o valor definido pelo usuario.
+
+    console.log(corPadrao);
 }
+shortCircuit();
 
-const vaiExecutar = false;
-
-console.log(vaiExecutar && falaOi());
-
-const corUsuario = null;
-const corPadrao = corUsuario || "preto"; // retorna preto caso corUsuario seja null (ou falsy). Caso contrario, retorna o valor definido pelo usuario.
-
-console.log(corPadrao);
 
