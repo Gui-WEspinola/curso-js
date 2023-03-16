@@ -16,7 +16,6 @@ function executaFuncao(funcao) {
     console.log('Vou executar sua função abaixo:');
     funcao();
 }
-
 executaFuncao(souUmDado);
 
 // Arrow function
@@ -25,7 +24,7 @@ const arrowFunction = () => {
 }
 arrowFunction();
 
-// Dentro de um objeto
+// Declaração em um objeto
 const obj = {
     falar: function () {
         console.log('Estou falando')
