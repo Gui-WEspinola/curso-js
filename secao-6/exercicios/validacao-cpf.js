@@ -32,4 +32,3 @@ function validaCPF(cpf) {
         return Number(digito) === (11 - (total % 11)) ? true : false;
     }
 }
-console.log(validaCPF("450.953.790-58"));
