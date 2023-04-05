@@ -30,5 +30,5 @@ function validaCPF(cpf) {
             return contador;
         }, 0);
         return Number(digito) === (11 - (total % 11)) ? true : false;
-    }
+    } // TODO Fazer validações de CPF, conforme a aula -> REFACTORING
 }
