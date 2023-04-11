@@ -23,9 +23,12 @@ const requestComCallbacks = obj => {
 
     xhr.addEventListener('load', () => {
         if (xhr.status >= 200 && xhr.status < 300) {
-            resolve(xhr.responseText);
+            obj.success(xhr.responseText);
         } else {
-            reject(xhr.re)
+            obj.error({
+                code: xhr.status,
+                msg: xhr.statusText
+            });
         }
     });
 };
@@ -33,14 +36,13 @@ const requestComCallbacks = obj => {
 document.addEventListener('click', evt => {
     const el = evt.target;
     const tag = el.tagName.toLowerCase();
-
     if (tag === 'a') {
         evt.preventDefault();
         carregaPagina(el);
     }
-})
+});
 
-async function carregaPagina(el) {
+function carregaPagina(el) {
     const href = el.getAttribute('href');
 
     const objConfig = {
@@ -48,8 +50,9 @@ async function carregaPagina(el) {
         url: href,
     };
 
-    const response = await request(objConfig);
-    carregaResultado(response);
+    request(objConfig).then(response => {
+        carregaResul5tado(response);
+    }).catch(error => console.log(error));
 }
 
 function carregaResultado(response) {
