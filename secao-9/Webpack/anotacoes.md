@@ -15,4 +15,4 @@ automaticamente alterará os arquivos no bundle (public).
 
 lembrando que a pasta ./node_modules deve ser ignorada e não é necessária para compartilhamento da aplicação, podendo
 serem todos os módulos reinstalado através da declaração das dependências utilizadas no projeto no `package.json`,
-além do comando `npm install` ou `npm i`
+além do comando `npm install` ou `npm i`.
